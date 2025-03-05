@@ -6,7 +6,7 @@
 
 
 
-
+// q1
 
 // let ans = Number(prompt("what is yoour age?"));
 // if (isNaN(ans)) {
@@ -24,7 +24,7 @@
 
 
 
-
+// q2
 
 // let amount = Number(prompt("what is the final amount"));
 // let dis = 0;
@@ -49,4 +49,30 @@
 
 
 
+// q3
+
+// upto 100  = 4 perunit
+// upto 101 - 200  = 6 perunit
+// upto 201 - 400  = 8 perunit
+// morethan 400  = 13 perunit
+
+let units = +prompt("Enter your Units that you used!")
+let result = 0
+if (isNaN(units)) {
+  console.log("Invalid Number");
+}
+
+if (units<=100){
+    result = units * 4
+    units = units - 100
+}
+if (units<=100) {
+    console.log("more than 100" , units);
+    result = units * 6 
+    units = units - 200
+}
+if (units<=100) {
+    console.log("more than 100" , units);
+    result = units * 6 
+}
 
